@@ -1,0 +1,615 @@
+html, body {
+  background-color: #faf9f9;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: sans-serif;
+}
+.glry {
+    margin-right: 50px;
+  }
+  .trsm {
+    margin-left: 50px;
+  }
+  nav {
+      z-index: 9999;
+      position: fixed;
+      width: 100%;
+  }
+  nav ul {
+    position: cover;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: black;
+      padding: 0;
+      text-align: center;
+      margin: 0;
+      transition: 1s;
+  }
+  nav.black ul {
+    height: 70px;
+    position: cover;
+      background: #E7EAEB;
+  }
+  nav ul li {
+    position: cover;
+      display: inline-block;
+      padding: 20px;
+  }
+  nav ul li a {
+    position: cover;
+    padding: 5px 0px;
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+      transition: all 0.2s linear;
+  }
+  nav ul li a:hover {
+    position: cover;
+      border-radius: 30px;
+      padding: 10px 10px;
+      color: white;
+      background-color: #373737;
+      opacity: 1;
+      transition: all 0.2s linear;
+  }
+  .menu-icon {
+      color: black;
+      width: 100%;
+      background: #E7EAEB;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      display: none;
+  }
+  @media(max-width: 580px) {
+      .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+      }
+      nav ul {
+          max-height: 0px;
+          background: #E7EAEB;
+      }
+      nav.black ul {
+          background: #E7EAEB;
+      }
+      .showing {
+          max-height: 35em;
+      }
+      nav ul li {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 24px 0;
+          text-align: center;
+      }
+      .menu-icon {
+          display: block;
+      }
+      .glry {
+        margin-left: 50px;
+      }
+      .trsm {
+        margin-right: 50px;
+      }
+  }
+  
+  /*search vbrohk*/
+  
+  .search-box {
+    color: black;
+      position: relative;
+      display: inline-block;
+      border: 2px solid #;
+      border-radius: 20px;
+    }
+    .search-box input[type="text"] {
+      color: white;
+      background-color: black;
+      -webkit-appearance: none;
+      position: relative;
+      display: block;
+      width: 25px;
+      height: 25px;
+      margin: 0;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      z-index: 1;
+      -webkit-transition: all 0.5s ease-out 0.5s;
+      transition: all 0.5s ease-out 0.5s;
+      outline: none;
+    }
+    .search-box input[type="text"]:focus {
+      width: 280px;
+      height: 25px;
+      margin-right: 20px;
+      -webkit-transition: all 0.5s ease-out 0s;
+      transition: all 0.5s ease-out 0s;
+    }
+    .search-box input[type="text"]:focus + span::before {
+      height: 14px;
+      margin: -22px 0 0 -15px;
+      -webkit-transition: all 0.2s ease-out 0.5s;
+      transition: all 0.2s ease-out 0.5s;
+    }
+    .search-box input[type="text"]:focus + span::after {
+      visibility: visible;
+      margin: -22px 0 0 -15px;
+      -webkit-transition: all 0.2s ease-out 0.7s;
+      transition: all 0.2s ease-out 0.7s;
+    }
+    .search-box span {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      z-index: 10;
+    }
+    .search-box span::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 55%;
+      width: 3px;
+      height: 10px;
+      margin: -3px 0 0 0;
+      background-color: black;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      -webkit-transition: all 0.2s ease-out 0.2s;
+      transition: all 0.2s ease-out 0.2s;
+    }
+    .search-box span::after {
+      content: '';
+      visibility: hidden;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 14px;
+      margin: -36px 0 0 5px;
+      background-color: black;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transition: all 0.2s ease-out 0s;
+      transition: all 0.2s ease-out 0s;
+    }
+.atas {
+    width: 100%;
+    height: 80px;
+    background-color: brown;
+}
+.bg {
+    height: 430px;
+    background: url(p1.jpg) no-repeat center  ;
+    background-size: cover;
+    position: relative;
+    top: 150px;
+}
+.bg2 {
+    height: 430px;
+    background: url(p2.jpg) no-repeat center  ;
+    background-size: cover;
+    position: relative;
+    top: -260px;
+}
+.ktk {
+    top: -340px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    height: 580px;
+    width: 842px;
+    border: 1px solid #000000;
+}
+.ktk2 {
+    top: -750px;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    height: 577px;
+    width: 842px;
+    border: 1px solid #000000;
+}
+.tp {
+    margin-left: 5px;
+    display: inline-flex;
+    padding: 5px;
+}
+.tp i{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.tp2 {
+    margin-left: 5px;
+    display: inline-flex;
+    padding: 5px;
+}
+.tp2 i{
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.s {
+    margin-top: -10px;
+    margin-left: 15px;
+}
+.s2 {
+    margin-top: -10px;
+    margin-left: 15px;
+}
+.tgl {
+    font-size: 13px;
+    margin-top: -18px;
+}
+.tgl2 {
+    font-size: 13px;
+    margin-top: -18px;
+}
+.v {
+    margin-top: 20px;
+    margin-left: 465px;
+}
+.v2 {
+    margin-top: 20px;
+    margin-left: 465px;
+}
+.ct {
+    width: 100%;
+}
+.ct2 {
+    width: 100%;
+}
+.bt p{
+    margin-top: 430px;
+    font-size: 15px;
+    text-align: center;
+}
+.bt2 p{
+    margin-top: 430px;
+    font-size: 15px;
+    text-align: center;
+}
+.x {
+    width: 100%;
+    height: 570px;
+    background-color: #faf9f9;
+    margin-top: -700px;
+}
+.x2 {
+    width: 100%;
+    height: 570px;
+    background-color: #faf9f9;
+    margin-top: 0;
+}
+.judul1 {
+    text-align: right;
+    margin-top: 100px;
+    margin-bottom: -80px;
+    margin-right: 265px;
+}
+.judul2 {
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: -80px;
+    margin-left: 265px;
+}
+.ex {
+    margin-left: -140px;
+    margin-top: 135px;
+    height: 300px;
+    width: 570px;
+    background-image: url(p3.jpg);
+    background-size: cover;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.ex p{
+    margin-top: -30px;
+    position: absolute;
+    transform: rotate(270deg);
+    font-size: 80px;
+    color: white;
+    margin-left: 260px;
+}
+.rat1 {
+    margin-top: 100px;
+    margin-right: 50px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat1:hover{
+    margin-top: 100px;
+    margin-right: 50px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat2 {
+    margin-top: 100px;
+    margin-right: 100px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat2:hover{
+    margin-top: 100px;
+    margin-right: 100px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat3 {
+    margin-top: 100px;
+    margin-right: 100px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat3:hover{
+    margin-top: 100px;
+    margin-right: 100px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat4 {
+    margin-top: 50px;
+    margin-right: 50px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat4:hover{
+    margin-top: 50px;
+    margin-right: 50px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat5 {
+    margin-top: 50px;
+    margin-right: 100px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat5:hover{
+    margin-top: 50px;
+    margin-right: 100px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat6 {
+    margin-top: 50px;
+    margin-right: 100px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat6:hover{
+    margin-top: 50px;
+    margin-right: 100px;
+    float: right;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.z2 {
+  float: right;  
+}
+.bw {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4545;
+}
+.bw a i{
+    float: right;
+    color: white;
+    padding: 15px 7px 15px 7px;
+    transition-duration: 0.5s;
+}
+.bw a i:hover{
+    transition-duration: 0.5s;
+    opacity: 0.5;
+}
+
+
+.ex2 {
+    margin-top: -45px;
+    margin-left: 914px;
+    float: right;
+    height: 300px;
+    width: 570px;
+    background-image: url(p3.jpg);
+    background-size: cover;
+    position: absolute;
+    transform: rotate(270deg);
+}
+.ex2 p{
+    transform: rotate(90deg);
+    float: right;
+    position: absolute;
+    font-size: 80px;
+    margin-top: -80px;
+    margin-left: 200px;
+    color: white;
+}
+.rat12 {
+    margin-top: 100px;
+    margin-left: 50px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat22 {
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat32 {
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat42 {
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat52 {
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat62 {
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    transition: 1s;
+}
+.rat12:hover {
+    margin-top: 100px;
+    margin-left: 50px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat22:hover {
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat32:hover {
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat42:hover {
+    margin-top: 50px;
+    margin-left: 50px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat52:hover {
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+.rat62:hover {
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: black;
+    box-shadow: 8px 8px #373737;
+    transition: 1s;
+}
+
+.z22 {
+  float: left;  
+}
+.xxx {
+    margin-top: 395px;
+    height: 100px;
+    width: 100%;
+    background-color: #000000;
+}
+.xz p{
+    margin-top: 25px;
+    text-align: center;
+    font-family: serif;
+    color: white;
+  }
